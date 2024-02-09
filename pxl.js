@@ -15,7 +15,7 @@
         *   Erstellt die Matrix
         */
         create_matrix: function() {
-            
+            alert("test");
             let x = 3;
             let y = 3;
             let zx = 3;
