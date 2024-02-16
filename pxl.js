@@ -87,6 +87,17 @@
             
 
             return this; // Rückgabe des Objekts für Methodenverkettung
+        },
+
+        /*
+        **
+        */
+        clear_matrix: function(data) {
+            
+            $("#box").empty();
+            $("#create_matrix").prop("disabled", false);
+
+            return this;
         }
     };
 
@@ -108,6 +119,7 @@
                 // Erstelle die Buttons "fill" und "create_matrix"
                 var createButton = $('<button id="create_matrix">Create Matrix</button><br>').appendTo(controlWrapper);
                 var fillButton = $('<button id="fill">Fill random Pxl</button><br>').appendTo(controlWrapper);
+                var clearButton = $('<button id=clear">Clear</button><br>').appendTo(controlWrapper);
                 
                 // Weise den Buttons die entsprechenden Methoden zu
                 fillButton.on('click', function() {
@@ -116,7 +128,10 @@
 
                 createButton.on('click', function() {
                     pxlInstance.create_matrix();
+                });
 
+                clearButton.on('click', function() {
+                    pxlInstance.clear_matrix();
                 });
             }
         });
