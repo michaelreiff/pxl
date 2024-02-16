@@ -27,6 +27,8 @@ body, html {
     bottom: 0;
     right: 0;
     padding: 10px;
+    border: 1px solid rebeccapurple;
+    display: inline-block;
 }
 
 .square {
@@ -38,6 +40,8 @@ body, html {
     text-align: center;
 }
 
+/*
 .k_1_2 {
     background-color: brown;
 }
+*/
